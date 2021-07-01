@@ -28,7 +28,10 @@ export default function Home() {
   }
 
   return (
-    <main className='relative top-72 w-full pb-80'>
+    <main
+      className='relative top-72 w-full pb-80 animate-fade-in opacity-0'
+      style={{ animationDuration: '300ms' }}
+    >
       <div className='w-11/12 bg-white m-auto rounded-lg flex flex-col items-center space-y-8 max-w-screen-2xl'>
         <div className='bg-gray-200 w-32 h-32 rounded-full m-auto -mt-16 animate-fade-in opacity-0'>
           <FaLaptopCode className='m-auto pt-6 w-24 h-24 text-gray-700' />
