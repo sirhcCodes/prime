@@ -1,29 +1,19 @@
-# Next.js + Tailwind CSS Example
+# Next.js + Tailwind CSS Personal Page
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+I recently started learning web development and wanted to learn specifically Next.js and TailwindCSS. I decided to build this project to learn the process of creating and deploying this project along with being able to use it as a personal webpage.
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+## Always learning!!!
 
-## Preview
+Feel free to checkout the code and give me any helpful tips or suggestions as I'm always up to learn something new. Also, feel free to ask questions and I'll do my best to answer them in a relatively easy manner.
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+## Build Process & Resources used:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
 npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+_State, hooks & the Nav_ Started off creating a Navbar component which I wanted to use useState and useEffect hooks to gain a better understanding. I implemented both to allow the page to grab the width of the screen size to allow for a dynamic "logo" that changes from Chris W. on small screens to Chris Wong on medium and up sizes.
+
+_Icons_ I initially had issues using various icon packages that didn't allow me to adjust the icons as much as I'd like. Ended up finding "https://react-icons.github.io/react-icons/" which is a great source of icons from various resources.
+
+_Footer_ Wanted to go with a simple footer. Decided it was a good chance to learn TailwindCSS' grid a bit since I usually only use flexbox to layouts. After working on this and seeing how simple creating layouts with Tailwind is...no going back!!! Highly recommend if you have not used it.
+
+_index.js_ Relatively simple layout and content. again, with one of my main focuses being learning Tailwind I wanted to use a bit more creativity and started to use some customer keyframes and diving into the congif file a bit more.
