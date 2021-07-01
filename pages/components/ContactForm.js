@@ -49,9 +49,6 @@ const ContactForm = () => {
             placeholder='Name'
             required
             className={inputStyles}
-            onChange={(e) => {
-              setName(e.target.value);
-            }}
           />
         </formGroup>
         <formGroup>
@@ -62,9 +59,6 @@ const ContactForm = () => {
             placeholder='Email'
             required
             className={inputStyles}
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
           />
         </formGroup>
         <formGroup>
@@ -73,9 +67,6 @@ const ContactForm = () => {
             name='message'
             placeholder='Message...'
             className={inputStyles}
-            onChange={(e) => {
-              setMessage(e.target.value);
-            }}
             rows='5'
           />
         </formGroup>
