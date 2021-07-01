@@ -8,7 +8,7 @@ const Contact = () => {
   const socialIcons = 'hover:text-red-800 transition duration-300 text-4xl';
 
   return (
-    <section className='relative w-full pb-80 animate-fade-in opacity-0'>
+    <section className='w-full pb-8 animate-fade-in opacity-0 min-h-screen'>
       <div className='bg-hi bg-cover bg-center h-96 flex items-center justify-center'>
         <h1 className='text-white text-3xl font-extrabold mt-32 md:mt-40 lg:mt-24 shadow-2xl'>
           Let's connect!!!

@@ -10,6 +10,8 @@ module.exports = {
     },
     minHeight: {
       72: '18rem',
+      full: '100%',
+      screen: '100vh',
     },
     extend: {
       backgroundImage: (theme) => ({

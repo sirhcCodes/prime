@@ -30,8 +30,8 @@ export default function Home() {
   }
 
   return (
-    <main
-      className='pt-48 w-full min-h-full md:pb-80 animate-fade-in opacity-0'
+    <div
+      className='pt-48 md:pt-64 pb-8 w-full min-h-screen md:pb-40 animate-fade-in opacity-0'
       style={{ animationDuration: '300ms' }}
     >
       <div className='w-11/12 bg-white m-auto rounded-lg flex flex-col items-center space-y-8 max-w-screen-2xl'>
@@ -127,6 +127,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
