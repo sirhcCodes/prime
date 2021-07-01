@@ -39,7 +39,7 @@ export default function Home() {
           <FaLaptopCode className='m-auto pt-6 w-24 h-24 text-gray-700' />
         </div>
         <h1 className='text-4xl font-extrabold opacity-0 animate-icon-activities font-serif'>
-          Hi, I'm Chris. 🤙🏼
+          Hi, I'm Chris.
         </h1>
         <div
           className='text-sm text-gray-400 opacity-0 animate-on-load'

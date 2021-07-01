@@ -11,7 +11,7 @@ const Contact = () => {
     <section className='w-full pb-8 animate-fade-in opacity-0 min-h-screen'>
       <div className='bg-hi bg-cover bg-center h-96 flex items-center justify-center'>
         <h1 className='text-white text-3xl font-extrabold mt-32 md:mt-40 lg:mt-24 shadow-2xl'>
-          Let's connect!!!
+          Let's connect.
         </h1>
       </div>
       <div className='w-11/12 text-center px-3 max-w-screen-md bg-gray-50 mt-16 m-auto rounded shadow-md'>
