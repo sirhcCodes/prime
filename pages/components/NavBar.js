@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 const NavBar = ({ isVisible }) => {
   const [width, setWidth] = useState(0);
-  const navStyle = 'flex space-x-4 text-xl font-light';
+  const navStyle = 'flex space-x-4 md:text-xl font-light';
   const navLinks = 'text-gray-400 hover:text-black transition duration-300';
 
   useEffect(() => {
@@ -16,13 +16,13 @@ const NavBar = ({ isVisible }) => {
   }, []);
 
   return (
-    <nav className='fixed min-w-full z-10 bg-white shadow-md'>
-      <div className='px-4 py-4 md:flex md:items-baseline md:justify-between	max-w-screen-2xl m-auto md:px-8'>
+    <nav className='fixed min-w-full z-10 bg-white shadow-md h-20 md:h-24 '>
+      <div className='px-4 pt-2 md:mx-auto md:pt-0 md:flex md:items-center md:justify-between max-w-screen-2xl md:mt-6'>
         <div>
           <Link href='/'>
-            <a className='flex items-center font-bold space-x-2 text-4xl mt-3 mb-1 md:mb-0 opacity-0 animate-on-load'>
+            <a className='flex items-center font-bold space-x-1 text-3xl md:text-4xl md:mb-0 opacity-0 animate-on-load'>
               <FaLaptopCode />
-              <p>{width < 768 ? 'Chris W.' : 'Chris Wong'}</p>
+              <p>{width < 768 ? 'CW' : 'Chris Wong'}</p>
             </a>
           </Link>
         </div>

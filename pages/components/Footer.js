@@ -8,7 +8,7 @@ const Footer = () => {
     'hover:text-gray-500 transition duration-300 text-2xl font-extrabold';
 
   return (
-    <footer className='fixed w-full bottom-0 m-0 bg-gray-100 flex flex-col min-h-72 border-t-2'>
+    <footer className='w-full md:fixed bottom-0 m-0 md:text-md bg-gray-100 flex flex-col h-28 md:h-40 lg:h-72 border-t-2'>
       <div className='flex-grow grid grid-cols-2 md:grid-cols-3 content-center gap-4'>
         <div className='h-full m-auto'>
           <div className='max-w-max'>
@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <span className='flex items-center justify-center border-t-2 mb-1 pt-4 w-full m-auto shadow-inner'>
+        <span className='flex items-center justify-center md:border-t-2 md:mb-1 md:pt-2 w-full m-auto shadow-inner text-sm'>
           <FaRegCopyright className='mr-0.5' />
           2021 Christopher Wong
         </span>

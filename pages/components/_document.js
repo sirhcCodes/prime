@@ -18,7 +18,6 @@ class MyDocument extends Document {
             href='https://fonts.googleapis.com/css2?family=Roboto&display=swap'
             rel='stylesheet'
           />
-          <title>Chris Wong</title>
         </Head>
         <body>
           <Main />
