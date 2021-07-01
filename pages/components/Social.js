@@ -1,4 +1,9 @@
-import { FaLinkedin, FaInstagramSquare, FaTwitterSquare } from 'react-icons/fa';
+import {
+  FaLinkedin,
+  FaInstagramSquare,
+  FaTwitterSquare,
+  FaGithubSquare,
+} from 'react-icons/fa';
 import Link from 'next/link';
 
 const Social = (props) => {
@@ -17,6 +22,11 @@ const Social = (props) => {
       <Link href='https://twitter.com/Chris808617'>
         <a target='_blank' className={props.className}>
           <FaTwitterSquare />
+        </a>
+      </Link>
+      <Link href='https://github.com/sirhcCodes'>
+        <a target='_blank' className={props.className}>
+          <FaGithubSquare />
         </a>
       </Link>
     </div>
