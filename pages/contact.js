@@ -1,6 +1,3 @@
-import { FaLinkedin, FaInstagramSquare, FaTwitterSquare } from 'react-icons/fa';
-import Link from 'next/link';
-import { useState } from 'react';
 import ContactForm from './components/ContactForm';
 import Social from './components/Social';
 

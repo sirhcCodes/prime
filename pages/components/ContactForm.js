@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 const ContactForm = () => {
   const inputStyles = 'shadow-md rounded-md py-1 px-2 w-11/12 md:w-2/3 m-auto';
 
@@ -22,7 +20,7 @@ const ContactForm = () => {
         <label style={{ visibility: 'hidden' }}>
           <input name='bot-field' />
         </label>
-        <formGroup>
+        <p>
           <label htmlFor='name'></label>
           <input
             type='text'
@@ -31,8 +29,8 @@ const ContactForm = () => {
             required
             className={inputStyles}
           />
-        </formGroup>
-        <formGroup>
+        </p>
+        <p>
           <label htmlFor='email'></label>
           <input
             type='text'
@@ -41,8 +39,8 @@ const ContactForm = () => {
             required
             className={inputStyles}
           />
-        </formGroup>
-        <formGroup>
+        </p>
+        <p>
           <label htmlFor='message'></label>
           <textarea
             name='message'
@@ -50,8 +48,8 @@ const ContactForm = () => {
             className={inputStyles}
             rows='5'
           />
-        </formGroup>
-        <button className='inline h-10 w-32 rounded-full m-auto text-red-800 font-light border-red-800 border-2 bg-white hover:bg-red-800 hover:text-white'>
+        </p>
+        <button className='inline h-10 w-32 rounded-full m-auto text-red-800 font-bold border-red-800 border-2 bg-white hover:bg-red-800 hover:text-white'>
           Submit
         </button>
       </form>

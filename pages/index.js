@@ -1,7 +1,7 @@
 import { FaLaptopCode } from 'react-icons/fa';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { FiCoffee, FiCamera } from 'react-icons/fi';
-import { GiRunningShoe, GiIsland } from 'react-icons/gi';
+import { GiRunningShoe } from 'react-icons/gi';
 import {
   SiHtml5,
   SiCss3,
@@ -17,11 +17,11 @@ export default function Home() {
   const activityStyle =
     'flex items-center text-xl font-light animate-icon-activities opacity-0';
   const iconStyle = 'mr-0.5 text-gray-400';
-  const techStyle = ' h-12 w-12 text-gray-600';
+  const technologyStyles = ' h-12 w-12 text-gray-600';
   const aboutContent =
     'text-center w-full m-auto lg:w-1/2 mt-8 opacity-0  font-serif';
 
-  function learnMore() {
+  function learnMoreHandler() {
     if (aboutVisible) {
       setAboutVisible(false);
     } else {
@@ -71,10 +71,10 @@ export default function Home() {
             and the excitement of finding a solution to the task at hand.
           </p>
           <button
-            className='text-red-800 border-2 transition duration-600 border-red-800 py-2 w-36 md:w-44 lg:w-48 m-auto rounded-full font-light hover:text-white hover:bg-red-800 mt-6'
-            onClick={learnMore}
+            className='text-red-800 border-2 border-red-800 py-2 w-36 md:w-44 lg:w-48 m-auto rounded-full hover:text-white hover:bg-red-800 mt-6'
+            onClick={learnMoreHandler}
           >
-            Learn more
+            <p className='font-bold'>Learn more</p>
           </button>
           <div
             className={
@@ -107,22 +107,22 @@ export default function Home() {
           <h3 className='text-center text-2xl font-bold mb-4'>Technologies</h3>
           <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 justify-items-center	gap-8 mb-8 text-center'>
             <div>
-              <SiHtml5 className={techStyle} />
+              <SiHtml5 className={technologyStyles} />
             </div>
             <div>
-              <SiCss3 className={techStyle} />
+              <SiCss3 className={technologyStyles} />
             </div>
             <div>
-              <SiTailwindcss className={techStyle} />
+              <SiTailwindcss className={technologyStyles} />
             </div>
             <div>
-              <SiJavascript className={techStyle} />
+              <SiJavascript className={technologyStyles} />
             </div>
             <div>
-              <SiReact className={techStyle} />
+              <SiReact className={technologyStyles} />
             </div>
             <div>
-              <SiNextDotJs className={techStyle} />
+              <SiNextDotJs className={technologyStyles} />
             </div>
           </div>
         </div>

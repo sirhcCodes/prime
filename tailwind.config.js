@@ -19,9 +19,12 @@ module.exports = {
       }),
       animation: {
         'on-load': 'on-load 1s ease forwards',
+        'links-load': 'on-load .5s ease forwards',
         'icon-activities': 'icon-activities 2s ease .5s forwards',
         'about-me': 'about-me 1.3s ease .1s forwards',
         'fade-in': 'fade-in 2s ease .2s forwards',
+        spin: 'spin .1s ease forwards',
+        'spin-out': 'spin .1s ease reverse',
       },
       keyframes: {
         'on-load': {
@@ -39,6 +42,10 @@ module.exports = {
         'fade-in': {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 },
+        },
+        spin: {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(180deg)' },
         },
       },
     },

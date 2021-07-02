@@ -3,11 +3,11 @@ import Footer from './Footer';
 
 const Layout = ({ children }) => {
   return (
-    <div className='min-h-screen'>
+    <>
       <NavBar />
       {children}
       <Footer />
-    </div>
+    </>
   );
 };
 
