@@ -79,10 +79,21 @@ const NavBar = () => {
               <Link href='/contact'>
                 <a
                   className={miniNav ? navLinksOpen : navLinksClose}
-                  style={{ animationDelay: '300ms' }}
+                  style={{ animationDelay: '200ms' }}
                   onClick={navCloseHandler}
                 >
                   Contact
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href='/weather'>
+                <a
+                  className={miniNav ? navLinksOpen : navLinksClose}
+                  style={{ animationDelay: '400ms' }}
+                  onClick={navCloseHandler}
+                >
+                  Weather
                 </a>
               </Link>
             </li>
