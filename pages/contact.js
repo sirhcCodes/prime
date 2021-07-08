@@ -1,5 +1,5 @@
-import ContactForm from './components/ContactForm';
-import Social from './components/Social';
+import ContactForm from '../components/contact_form';
+import Social from '../components/social_icons';
 
 const Contact = () => {
   const socialIcons = 'hover:text-red-800 transition duration-300 text-4xl';

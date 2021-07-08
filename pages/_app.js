@@ -1,6 +1,6 @@
 import 'tailwindcss/tailwind.css';
-import Layout from './components/Layout';
-import Header from './components/Header';
+import Layout from '../components/layout';
+import Header from '../components/header';
 
 function MyApp({ Component, pageProps }) {
   return (
