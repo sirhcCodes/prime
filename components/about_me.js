@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const About = () => {
+const AboutMe = () => {
   const [aboutVisible, setAboutVisible] = useState(false);
   const aboutContent =
     'text-center w-full m-auto lg:w-1/2 mt-8 opacity-0  font-serif';
@@ -57,4 +57,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutMe;

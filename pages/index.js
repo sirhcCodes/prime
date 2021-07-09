@@ -1,5 +1,5 @@
 import Hero from '../components/main_hero';
-import About from '../components/about';
+import AboutMe from '../components/about_me';
 import Technologies from '../components/technologies';
 
 export default function Index() {
@@ -9,7 +9,7 @@ export default function Index() {
       style={{ animationDuration: '300ms' }}
     >
       <Hero />
-      <About />
+      <AboutMe />
       <Technologies />
     </div>
   );

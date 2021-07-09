@@ -24,7 +24,9 @@ module.exports = {
         'about-me': 'about-me 1.3s ease .1s forwards',
         'fade-in': 'fade-in 2s ease .2s forwards',
         spin: 'spin .1s ease forwards',
+        load: 'load .5s linear infinite',
         'spin-out': 'spin .1s ease reverse',
+        pulse: 'pulse .8s ease infinite',
       },
       keyframes: {
         'on-load': {
@@ -46,6 +48,14 @@ module.exports = {
         spin: {
           from: { transform: 'rotate(0deg)' },
           to: { transform: 'rotate(180deg)' },
+        },
+        load: {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' },
+        },
+        pulse: {
+          '0%': { opacity: 0.3 },
+          '100%': { opacity: 1 },
         },
       },
     },
