@@ -2,7 +2,7 @@ import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 
 const Loading = () => {
   return (
-    <div className='w-full'>
+    <div className='w-full text-center space-y-2'>
       <AiOutlineLoading3Quarters className='text-4xl animate-load mx-auto' />
       <p className='text-2xl'>
         Loading
