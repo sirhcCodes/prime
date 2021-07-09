@@ -1,8 +1,4 @@
-import { useState } from 'react';
-
 const WeatherInfo = ({ weather }) => {
-  const [isF, setIsF] = useState(true);
-
   return (
     <div className='w-11/12 text-center px-3 max-w-screen-md bg-gray-50 mt-8 m-auto rounded shadow-md py-8'>
       <h3 className='text-2xl'>
