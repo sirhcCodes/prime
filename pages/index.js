@@ -1,6 +1,6 @@
-import Hero from '../components/main_hero';
-import AboutMe from '../components/about_me';
-import Technologies from '../components/technologies';
+import Hero from '../components/home/main_hero';
+import AboutMe from '../components/home/about_me';
+import Technologies from '../components/home/technologies';
 
 export default function Index() {
   return (

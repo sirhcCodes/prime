@@ -1,7 +1,6 @@
 import { FaRegCopyright } from 'react-icons/fa';
-import { FaLinkedin, FaInstagramSquare, FaTwitterSquare } from 'react-icons/fa';
 import Link from 'next/link';
-import Social from './social_icons';
+import Social from '../social_icons';
 
 const Footer = () => {
   const socialIcons =
