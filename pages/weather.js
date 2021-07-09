@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import Loading from '../components/loading';
-import WeatherForm from '../components/weather_form';
-import WeatherInfo from '../components/weather_info';
+import Loading from '../components/weather/loading';
+import WeatherForm from '../components/weather/weather_form';
+import WeatherInfo from '../components/weather/weather_info';
 
 const Weather = () => {
   const [location, setLocation] = useState('02101');
@@ -18,14 +18,13 @@ const Weather = () => {
 
   return (
     <>
-      <div className='h-96 pt-32 min-h-screen max-w-2xl mx-auto animate-fade-in opacity-0'>
+      <div className='h-96 pt-32 min-h-screen max-w-xl mx-auto animate-fade-in opacity-0'>
         <h1 className='text-3xl font-bold text-center mb-4'>
           Weather Forecast
         </h1>
-        <div>
-          <WeatherForm setLocation={setLocation} />
-        </div>
+        <div></div>
         {loading ? <Loading /> : <WeatherInfo weather={weather} />}
+        <WeatherForm setLocation={setLocation} />
       </div>
     </>
   );
