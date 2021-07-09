@@ -10,7 +10,7 @@ const WeatherForm = ({ setLocation }) => {
     >
       <p className='flex flex-col space-y-2'>
         <label htmlFor='location' className='mr-1'>
-          The Zip Code of the city you would like to check.
+          Please enter Zip Code.
         </label>
         <input
           required
