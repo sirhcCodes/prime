@@ -39,10 +39,11 @@ const Technologies = () => {
           <SiNextDotJs className={technologyStyles} />
           <p>Next.js</p>
         </div>
-        <div>
+        <div className='md:order-8 xl:order-7'>
           <SiGithub className={technologyStyles} />
           <p>GitHub</p>
         </div>
+        <div className='xl:order-last'></div>
       </div>
     </div>
   );

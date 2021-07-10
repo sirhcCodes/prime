@@ -1,7 +1,7 @@
 const WeatherForm = ({ setLocation }) => {
   function submitHandler(e) {
     e.preventDefault();
-    setLocation(e.target.location.value.split(' ').join(''));
+    setLocation(e.target.location.value);
   }
   return (
     <form

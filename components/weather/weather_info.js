@@ -1,7 +1,7 @@
 const WeatherInfo = ({ weather }) => {
   return (
-    <div className='w-11/12 text-center px-3 max-w-screen-md bg-gray-50 mt-8 m-auto rounded shadow-md py-8'>
-      <h3 className='text-2xl'>
+    <div className='w-11/12 text-center px-3 max-w-screen-md bg-gray-50 mt-8 m-auto rounded shadow-md pt-8 opacity-0 animate-fade-in'>
+      <h3 className='text-xl md:text-2xl'>
         In <span className='font-bold'>{weather.location.name}</span> it's
         currently {weather.current.temp_f}°F
         {weather.current.temp_f !== weather.current.feelslike_f &&
@@ -18,7 +18,7 @@ const WeatherInfo = ({ weather }) => {
       {weather.forecast.forecastday.map((x) => (
         <div
           key={x.date}
-          className='grid grid-cols-4 gap-2 md:gap-8 justify-items-center items-center text-center w-4/5 m-auto m-auto border-t-2 last:border-b-2'
+          className='grid grid-cols-4 gap-2 md:gap-8 justify-items-center items-center text-center w-4/5 m-auto m-auto border-b-2'
         >
           <p className='font-bold'>{x.date.slice(5, 10)}</p>
           <p className='text-blue-800 font-bold'>
@@ -37,6 +37,7 @@ const WeatherInfo = ({ weather }) => {
           />
         </div>
       ))}
+      <p className='mt-8 pb-2 font-light text-sm'>Powered by WeatherAPI.com</p>{' '}
     </div>
   );
 };

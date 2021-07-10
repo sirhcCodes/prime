@@ -9,20 +9,24 @@ const Weather = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(async () => {
-    let inputUrl = `https://api.weatherapi.com/v1/forecast.json?key=3d782fae1846454aba3171355210307&q=${location}&days=3&aqi=no&alerts=yes`;
-    const response = await fetch(inputUrl);
-    const data = await response.json();
-    setWeather(data);
-    setLoading(false);
+    let data;
+    try {
+      let inputUrl = `https://api.weatherapi.com/v1/forecast.json?key=3d782fae1846454aba3171355210307&q=${location}&days=3&aqi=no&alerts=yes`;
+      const response = await fetch(inputUrl);
+      data = await response.json();
+      setWeather(data);
+      setLoading(false);
+    } catch (err) {
+      console.error(err);
+    }
   }, [location]);
 
   return (
     <>
-      <div className='h-96 pt-32 min-h-screen max-w-xl mx-auto animate-fade-in opacity-0'>
-        <h1 className='text-3xl font-bold text-center mb-4'>
+      <div className='pt-24 md:pt-32 min-h-screen max-w-xl mx-auto animate-fade-in opacity-0 mb-8'>
+        <h1 className='text-2xl md:text-3xl font-bold text-center mb-2 md:mb-4'>
           Weather Forecast
         </h1>
-        <div></div>
         {loading ? <Loading /> : <WeatherInfo weather={weather} />}
         <WeatherForm setLocation={setLocation} />
       </div>
