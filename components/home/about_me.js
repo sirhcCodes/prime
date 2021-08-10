@@ -19,7 +19,7 @@ const AboutMe = () => {
       <p className='text-center lg:w-1/2 m-auto  font-serif'>
         People first, with an innate affinity to help others. I'm always looking
         for ways to improve and grow. Self-taught frontend developer, fell in
-        love with coding for the challenege it provides and the excitement of
+        love with coding for the challenge it provides and the excitement of
         finding a solution to the task at hand.
       </p>
       <button
